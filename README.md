@@ -44,18 +44,32 @@ Program management runs on the same artifacts produced over and over: the weekly
 
 *New skills ship regularly. Suggestions welcome — open an issue.*
 
-## Getting started
+## Two ways to use it
 
-1. Browse [`skills/`](skills/) and pick a skill.
-2. Open its `SKILL.md` to see what it does and what inputs it expects.
-3. Copy the skill into your AI assistant (Claude Skills, a custom instruction, or an MCP server) and run it against your own data.
-4. Check the `examples/` folder in each skill to see the expected output.
+**1. Drop a skill into your assistant.** Browse [`skills/`](skills/), open a `SKILL.md`, and paste it into Claude, Copilot, or an MCP server. Run it against your own data, and check each skill's `examples/` folder for the expected output.
+
+**2. Run the CLI.** [`cli/`](cli/) ships a tiny, **model-agnostic** Python tool — `tpmos` — that pulls program data through source adapters (Jira / metrics / Confluence) and runs a skill to produce the artifact. Works offline with no API key:
+
+```bash
+cd cli
+python tpmos.py list
+python tpmos.py summarize --skill status-update --audience exec
+```
+
+Set `ANTHROPIC_API_KEY` or `OPENAI_API_KEY` for fully LLM-written output. See [`cli/README.md`](cli/README.md) for details.
 
 ## Structure
 
 ```
 tpm-os/
 ├── README.md
+├── index.html              # landing page (GitHub Pages)
+├── cli/                    # runnable, model-agnostic CLI
+│   ├── tpmos.py
+│   ├── adapters.py         # Jira / metrics / Confluence sources
+│   ├── providers.py        # Anthropic / OpenAI / offline
+│   ├── skills.py
+│   └── sample_data/
 └── skills/
     ├── status-update/
     │   ├── SKILL.md

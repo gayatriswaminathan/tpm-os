@@ -1,0 +1,8 @@
+# Core CLI needs nothing beyond the Python standard library — it runs offline.
+# Install one of these only if you want LLM-generated output:
+#   anthropic>=0.39
+#   openai>=1.40
+#
+# Pick your provider, set the matching API key, and tpmos uses it automatically:
+#   export ANTHROPIC_API_KEY=...   # uses Claude
+#   export OPENAI_API_KEY=...      # uses OpenAI

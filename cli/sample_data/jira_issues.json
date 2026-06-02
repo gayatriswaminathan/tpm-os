@@ -1,0 +1,17 @@
+{
+  "program": "Payments Migration",
+  "sprint": "Sprint 14",
+  "week_ending": "2026-05-29",
+  "issues": [
+    {"key": "PAY-101", "summary": "Migrate batch settlement service", "type": "Story", "status": "Done", "points": 8, "owner": "A. Rao"},
+    {"key": "PAY-102", "summary": "Dual-write reconciliation layer", "type": "Story", "status": "Done", "points": 13, "owner": "A. Rao"},
+    {"key": "PAY-103", "summary": "Cutover runbook for ledger service", "type": "Task", "status": "In Progress", "points": 5, "owner": "M. Chen"},
+    {"key": "PAY-104", "summary": "Vendor routing-engine integration", "type": "Story", "status": "Blocked", "points": 8, "owner": "M. Chen"},
+    {"key": "PAY-105", "summary": "Staging environment provisioning", "type": "Task", "status": "Blocked", "points": 3, "owner": "Infra"},
+    {"key": "PAY-106", "summary": "Load test queue at peak volume", "type": "Story", "status": "To Do", "points": 5, "owner": "S. Patel"},
+    {"key": "PAY-107", "summary": "Security pen test for SSO flow", "type": "Task", "status": "To Do", "points": 5, "owner": "Security"},
+    {"key": "PAY-108", "summary": "Decommission legacy settlement job", "type": "Story", "status": "To Do", "points": 8, "owner": "A. Rao"},
+    {"key": "PAY-109", "summary": "Customer comms for cutover window", "type": "Task", "status": "In Progress", "points": 2, "owner": "G. Swaminathan"},
+    {"key": "PAY-110", "summary": "Rollback automation for ledger", "type": "Story", "status": "Done", "points": 5, "owner": "S. Patel"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "program": "Payments Migration",
+  "week_ending": "2026-05-29",
+  "milestones": {"total": 18, "complete": 12},
+  "incidents_this_week": 1,
+  "open_risks": [
+    {"id": "R1", "risk": "Vendor routing-engine delivery slipped 1 week", "severity": "Critical", "owner": "M. Chen", "due": "2026-06-15"},
+    {"id": "R2", "risk": "Peak traffic during migration could overload queue", "severity": "High", "owner": "S. Patel", "due": "2026-06-20"}
+  ],
+  "dependencies": [
+    {"id": "D1", "need": "Security pen test sign-off", "from": "Security team", "by": "2026-06-18", "status": "Not started"}
+  ],
+  "adoption": {"teams_migrated": 12, "teams_total": 18}
+}
