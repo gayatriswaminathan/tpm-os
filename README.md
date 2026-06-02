@@ -35,7 +35,7 @@ Program management runs on the same artifacts produced over and over: the weekly
 | Skill | What it does | Status |
 |---|---|---|
 | 🟢 **prd-generator** | Turns a feature idea into a structured PRD with goals and acceptance criteria | Available |
-| ⚪ **roadmap-builder** | Builds a Now / Next / Later roadmap from initiatives and priorities | Planned |
+| 🟢 **roadmap-builder** | Builds a Now / Next / Later roadmap from initiatives and priorities | Available |
 | ⚪ **prioritization-engine** | Scores and ranks a backlog against a chosen framework (RICE, WSJF) | Planned |
 | ⚪ **okr-coach** | Drafts and pressure-tests OKRs for clarity and measurability | Planned |
 | ⚪ **north-star-finder** | Helps define a north-star metric and its input drivers | Planned |
