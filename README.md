@@ -26,6 +26,7 @@ Program management runs on the same artifacts produced over and over: the weekly
 |---|---|---|
 | 🟢 **status-update** | Turns raw notes into a clean exec / stakeholder status update | Available |
 | 🟢 **risk-tracker** | Builds and maintains a RAID log (Risks, Assumptions, Issues, Dependencies) | Available |
+| 🟢 **drift-detector** | Spots program drift — the gap between effort and progress — before a program is formally at risk | Available |
 | ⚪ **release-notes-pro** | Generates polished release notes from a changelog or ticket list | Planned |
 | ⚪ **incident-postmortem** | Drafts a blameless postmortem from an incident timeline | Planned |
 | ⚪ **meeting-orchestrator** | Builds agendas, captures decisions, and assigns action items | Planned |
