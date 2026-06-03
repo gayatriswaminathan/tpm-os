@@ -2,6 +2,8 @@
 
 A tiny, **model-agnostic** Streamlit app that turns raw program notes into a clean, audience-tuned status update — the TPM OS [`status-update`](../../skills/status-update) skill wrapped in a friendly web UI.
 
+![Program Status Agent](demo.png)
+
 Paste your messy notes, pick an audience (exec / stakeholder / engineering), and get a RAG-rated status update with every risk carrying an owner and a date.
 
 ## Run it
