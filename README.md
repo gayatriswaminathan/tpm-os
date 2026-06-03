@@ -1,10 +1,32 @@
-<h1 align="center">TPM OS</h1>
+<h1 align="center">📊 TPM OS</h1>
 
-<p align="center"><b>Open-source AI skills for the technical program manager's craft.</b></p>
+<p align="center"><b>The operating system for technical program managers.</b><br/>Open-source AI skills, a runnable CLI, and agents for the work that repeats.</p>
 
-<p align="center">Clone, customize, run — turn the repetitive parts of program management into reusable AI skills.</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/skills-5_live_·_7_planned-e9b949?style=flat" alt="skills"/>
+  <img src="https://img.shields.io/badge/model-agnostic-1F6FEB?style=flat" alt="model-agnostic"/>
+  <img src="https://img.shields.io/badge/built_with-Claude_·_MCP-D97757?style=flat" alt="built with"/>
+  <img src="https://img.shields.io/badge/PRs-welcome-3B6D11?style=flat" alt="PRs welcome"/>
+</p>
+
+<p align="center">
+  <a href="https://gayatriswaminathan.github.io/tpm-os"><b>🌐 Live site</b></a> ·
+  <a href="#skill-catalog"><b>📚 Skills</b></a> ·
+  <a href="cli/"><b>⚙️ CLI</b></a> ·
+  <a href="agents/"><b>🤖 Agents</b></a> ·
+  <a href="https://notesbygs.substack.com"><b>📬 Newsletter</b></a>
+</p>
 
 ---
+
+## What's inside
+
+| | | |
+|---|---|---|
+| 📚 **Skills** | Model-agnostic instruction sets for each TPM artifact | [`skills/`](skills/) |
+| ⚙️ **CLI** | `tpmos` — run skills against your program data | [`cli/`](cli/) |
+| 🤖 **Agents** | Runnable apps (Streamlit) wrapping the skills | [`agents/`](agents/) |
+| 🌐 **Site** | A live landing page | [link](https://gayatriswaminathan.github.io/tpm-os) |
 
 ## What this is
 
@@ -59,12 +81,22 @@ python tpmos.py summarize --skill status-update --audience exec
 
 Set `ANTHROPIC_API_KEY` or `OPENAI_API_KEY` for fully LLM-written output. See [`cli/README.md`](cli/README.md) for details.
 
+**3. Run an agent.** [`agents/`](agents/) holds runnable Streamlit apps — start with [`program-status-agent`](agents/program-status-agent): paste raw notes, pick an audience, get a clean status update in your browser.
+
+```bash
+cd agents/program-status-agent
+pip install -r requirements.txt
+streamlit run app.py
+```
+
 ## Structure
 
 ```
 tpm-os/
 ├── README.md
 ├── index.html              # landing page (GitHub Pages)
+├── agents/                 # runnable AI agents (Streamlit apps)
+│   └── program-status-agent/
 ├── cli/                    # runnable, model-agnostic CLI
 │   ├── tpmos.py
 │   ├── adapters.py         # Jira / metrics / Confluence sources
